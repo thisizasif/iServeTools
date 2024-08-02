@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* post cards css end here */
+.post-wrapper {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.card {
+  width: 300px;
+  border-style: solid;
+  background-color: white;
+  height: 350px;
+  border-radius: 33px;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 33px;
+}
+.icon {
+  width: 45px;
+}
+.tags {
+  width: 30%;
+  margin-left: 5px;
+  font-size: 10px;
+  background-color: brown;
+  border-radius: 10px;
+  display: block;
+  color: white;
+}
+.title {
+  /* color: white; */
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.description {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.description a {
+    text-decoration: none;
+    color: black;
+}
+.icon {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  /* display: block; */
+}
+.name{
+    margin-top: -35px;
+    margin-left: 50px;
+    height: 45px;
+    display: block;
+        font-size: 15px;
+    color: green;
+}
+.date{
+    margin-top: -20px;
+    margin-left: 50px;
+    height: 45px;
+    display: block;
+    font-size: 10px;
+    color: gray;
+}
+@media(max-width: 1200px){
+    .post-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width: 900px){
+    .post-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width: 600px){
+    .post-wrapper{
+        grid-template-columns: repeat(1,1fr);
+          /* display: flex;
+  justify-content: center; */
+
+
+    }
+    .card{
+          margin-left: 22%;
+    }
+}
+@media(max-width: 480px){
+    .post-wrapper{
+        margin-left: -53px;
+    }
+}
+
+/* post cards css end here */
+
